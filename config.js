@@ -196,7 +196,9 @@ window.SITE_CONFIG = {
       "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
 
     members: [
-      { name: "Yihang Qin", role: "SUMO Road Network Development + Traffic Demand and Signal Configuration + HDV/CAV Scenario Development + Intervention Design and Implementation + Results Analysis and Visualization + Report Writing and Referencing" }
+      { name: "Yihang Qin", role: "SUMO Road Network Development + Traffic Demand and Signal Configuration" },
+      { name: "Justin Tang", role: "HDV/CAV Scenario Development + Intervention Design and Implementation" },
+      { name: "Haider Ladha", role: "Results Analysis and Visualization + Report Writing and Referencing" }
     ],
 
     acknowledgments: [
@@ -208,6 +210,6 @@ window.SITE_CONFIG = {
     ],
 
     repoLabel: "Project Repository",
-    repoUrl: "https://github.com/USERNAME/smartcity-projecta.github.io"
+    repoUrl: "https://github.com/qiny61/smartcity-projecta.github.io"
   }
 };
