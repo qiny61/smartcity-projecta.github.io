@@ -1,6 +1,6 @@
 // config.js (Students edit only this file)
 window.SITE_CONFIG = {
-  pageTitle: "Academic Digital Twin Case Study | Student Showcase",
+  pageTitle: "Eglinton–Scarlett Traffic Simulation | Student Showcase",
   homeUrl: "https://roadwayvr.com",
 
   hero: {
@@ -40,30 +40,30 @@ window.SITE_CONFIG = {
   },
 
   footer: {
-	  footerBg: "#111111",
-	  footerText: "#ffffff",
-	  footerBorder: "#222222",
-	
-	  homeLinkText: "RoadwayVR",
-	
-	  templateCredit:
-	    "This academic showcase template was developed by RoadwayVR.",
-	
-	  templateCreditLinkText:
-	    "Learn more at RoadwayVR.com",
-	
-	  templateCreditUrl:
-	    "https://roadwayvr.com"
+    footerBg: "#111111",
+    footerText: "#ffffff",
+    footerBorder: "#222222",
+
+    homeLinkText: "RoadwayVR",
+
+    templateCredit:
+      "This academic showcase template was developed by RoadwayVR.",
+
+    templateCreditLinkText:
+      "Learn more at RoadwayVR.com",
+
+    templateCreditUrl:
+      "https://roadwayvr.com"
   },
 
   intro: {
     projectTitleLabel: "Project Title",
-    projectTitle: "Development of Digital Twin of a Railway Corridor Using Unity Game Engine and SUMO Traffic Simulation",
+    projectTitle: "Analysis of Simulated Existing Traffic Conditions, a 100% CAV Future, and a Candidate Intervention at the Eglinton–Scarlett Intersection",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
     heroVideoAlt: "Autoplay preview video (academic project)",
     videoCaption:
-      "Autoplay preview (≈20 seconds): raw video → Traffic Simulation → Blender → Unity → Results"
+      "Autoplay preview (≈20 seconds): Base Scenario (100% HDV) → Scenario 1 (100% AV/CAV) at Eglinton–Scarlett, Toronto"
   },
 
   caseStudy: {
@@ -71,26 +71,26 @@ window.SITE_CONFIG = {
 
     backgroundTitle: "Background",
     backgroundBullets: [
-			"Global freight rail is growing and remains strategically important.",
-			"Rail carries about 18% of EU inland freight, 36% in the U.S., and 27% in India.",
-			"Road dominates many freight systems, so rail often receives less attention.",
-			"In Canada, rail accounted for 10.5% of international merchandise trade value in 2024."
+      "Eglinton Avenue West and Scarlett Road form a signalized intersection in Toronto, Ontario.",
+      "SUMO microsimulation models individual vehicles, lanes, turning movements, and signals.",
+      "Connected and automated vehicles (CAVs) may change following gaps, acceleration, and speed.",
+      "Signal-timing changes can affect how traffic on a major-road approach moves through the junction."
     ],
 
     problemTitle: "Problem Statement",
     problemBullets: [
-			"Railway operations are hard to assess.",
-			"3D asset creation is time-consuming.",
-			"2D models lack immersion.",
-			"Results are difficult to communicate."
+      "A documented HDV baseline is needed before scenarios can be compared.",
+      "The effect of a 100% CAV fleet on the selected edge is uncertain.",
+      "The benefit of a major-road signal-timing change is unverified.",
+      "Simulation results are hard to communicate to a non-technical audience."
     ],
 
     objectivesTitle: "Project Objectives",
     objectivesBullets: [
-			"Simulate train scheduling, signaling, and capacity in SUMO.",
-			"Create 3D digital assets using generative AI and blender.",
-			"Create 3D rail environment and VR video in Unity.",
-			"Present results in different styles through KPIs, figures, and a showcase website."
+      "Build a SUMO network and traffic model of Eglinton–Scarlett and characterize the 100% HDV baseline.",
+      "Compare the speed–density relationship on edge E96 under 100% CAV versus 100% HDV.",
+      "Implement and evaluate a major-road signal-timing change on the same edge.",
+      "Present the project's methods and findings through a web showcase."
     ]
   },
 
@@ -98,23 +98,23 @@ window.SITE_CONFIG = {
     title: "Methodology",
     steps: [
       {
-        title: "Step 1: Train Scheduling and Signaling (SUMO Simulation)",
-				text: "Build the rail network and test routing, signaling, and timetables.",
+        title: "Step 1: Study Area Selection (GIS)",
+        text: "Select the Eglinton Ave W–Scarlett Rd intersection in Toronto as the study area.",
         image: "assets/img/image2.jpg"
       },
       {
-				title: "Step 2: Digital Twin Assets Developement (Blender)",
-				text: "Create a 3D railway assets using generative AI and blender.",
+        title: "Step 2: Road Network and HDV Baseline (SUMO)",
+        text: "Build the SUMO network and run the 100% HDV baseline on edge E96.",
         image: "assets/img/image3.jpg"
       },
       {
-				title: "Step 3: Immersive VR Visualization (Unity)",
-				text: "Create a 3D railway scene and produce a VR 360-degree video.",
+        title: "Step 3: 100% AV/CAV Scenario (SUMO)",
+        text: "Replace all vehicles with CACC-based CAVs while keeping other inputs the same.",
         image: "assets/img/image4.jpg"
       },
       {
-				title: "Step 4: Results & Communication (Figures + Showcase Website)",
-				text: "Summarize results using figures, KPIs, and the showcase website.",
+        title: "Step 4: Signal-Timing Intervention (SUMO)",
+        text: "Move 2 s of green time from phase 2 to phase 0 within the 29 s cycle.",
         image: "assets/img/image5.jpg"
       }
     ]
@@ -124,71 +124,71 @@ window.SITE_CONFIG = {
     title: "Methodology Steps (Demo Modules)",
     modules: [
       {
-        title: "Module 1: Train Scheduling & Signaling (SUMO)",
+        title: "Module 1: Study Area Selection (GIS)",
         bullets: [
-				  { text: "Build a simulated rail network in SUMO with train routing and maximum operating speed." },
-          { text: "Design fixed-block rail signals and define station stops along the corridor." },
-          { text: "Configure timetable, scheduled departures, running time, dwell time, and headway." }
+          { text: "Selected the Eglinton Avenue West–Scarlett Road intersection in Toronto (43.684° N, 79.512° W)." },
+          { text: "Eglinton Avenue West is the major corridor and Scarlett Road is the crossing road." },
+          { text: "Used a GIS aerial map to define the study boundary and the surrounding road network." }
         ],
         image: "assets/img/image2.jpg"
       },
       {
-        title: "Module 2: Digital Twin Assets Developement (Blender)",
+        title: "Module 2: Road Network and HDV Baseline (SUMO)",
         bullets: [
-          { text: "Generative AI: use Meshy.ai tool to develop different assets." },
-          { text: "From generative AI to belnder." },
-          { text: "Preprocessing assets in Blender ." }
+          { text: "Stage A1: built the SUMO network with lanes, turning lanes, junctions, and movement connections." },
+          { text: "Stage A2: added major-road demand of 300 veh/h straight and 150 veh/h per turn, with a 17/3/6/3 s signal plan." },
+          { text: "Ran the 100% HDV baseline and extracted speed–density data on edge E96 (Eglinton Ave W)." }
         ],
         image: "assets/img/image3.jpg"
       },
       {
-        title: "Module 3: Immersive VR Visualization (Unity)",
+        title: "Module 3: 100% AV/CAV Scenario (SUMO)",
         bullets: [
-				  { text: "Develop a 3D railway environment including stations, buildings, trees, and rolling stock." },
-          { text: "Configure visualization fundamentals: lighting, camera position, time of day, and scene composition." },
-          { text: "Produce a VR 360-degree video output for immersive presentation and portfolio use." }
+          { text: "Changed all 12 traffic flows to a CAV vehicle type using the CACC car-following model." },
+          { text: "Set desired headway (tau) to 0.6 s, minimum gap to 1.5 m, and lane-change cooperation to 1.0." },
+          { text: "Collected 37 speed–density observations on edge E96 at 100 s intervals." }
         ],
         image: "assets/img/image4.jpg"
       },
       {
-        title: "Module 4: Results & Communication",
+        title: "Module 4: Signal-Timing Intervention (SUMO)",
         bullets: [
-          { text: "Dashboard or plot set: KPI cards, bar charts, and/or time series." },
-          { text: "Scenario story: what changed, what improved, and what tradeoffs appeared." },
-          { text: "Limitations + next steps: what data would strengthen confidence." }
+          { text: "Kept 100% HDVs and changed only the major-road signal timing." },
+          { text: "Phase 0 increased from 17 s to 19 s, and phase 2 decreased from 6 s to 4 s." },
+          { text: "The 29 s cycle stayed the same, and edge E96 was measured again for comparison." }
         ],
         image: "assets/img/image5.jpg"
       }
     ]
   },
 
-	results: {
-			title: "Results & Potential Improvements",
-			subtitle:
-				"Train schedule simulation outputs across two scenarios showing arrivals, departures, and dwell time across four stations. Results are for educational purposes only.",
+  results: {
+    title: "Results & Potential Improvements",
+    subtitle:
+      "Speed–density relationships on edge E96 (Eglinton Ave W) for the 100% HDV base scenario and the 100% AV/CAV scenario, using a linear Greenshields fit. Results are simulation-based and for educational purposes only.",
 
-			charts: {
-				left: {
-					title: "Scenario 1 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image6.jpg",
-					alt: "Scenario 1 train schedule chart showing arrivals and departures across S1 to S4"
-				},
-				right: {
-					title: "Scenario 2 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image7.jpg",
-					alt: "Scenario 2 train schedule chart showing arrivals and departures across S1 to S4"
-				}
-			},
+    charts: {
+      left: {
+        title: "Base Scenario (100% HDV) — Speed–Density on Edge E96",
+        src: "assets/img/image6.jpg",
+        alt: "Speed–density plot for the 100% HDV base scenario on edge E96, vf = 12 m/s and kj = 59 veh/km"
+      },
+      right: {
+        title: "Scenario 1 (100% AV/CAV) — Speed–Density on Edge E96",
+        src: "assets/img/image7.jpg",
+        alt: "Speed–density plot for the 100% AV/CAV scenario on edge E96, vf = 11 m/s and kj = 65 veh/km"
+      }
+    },
 
-			discussionTitle: "Discussion",
-			discussionBullets: [
-				"Scenario 1 provides a stable baseline timetable with consistent station dwell and smooth train progression.",
-				"Scenario 2 applies a delay at S2, which then propagates to downstream stations.",
-				"Delay effects grow across frequency levels, with major increases in arrival and departure times at S3 and S4.",
-				"S1 is only slightly affected, while downstream stations absorb most of the disruption.",
-				"This demonstrates the importance of recovery time, dwell management, and operational control in rail scheduling."
-			]
-		},
+    discussionTitle: "Discussion",
+    discussionBullets: [
+      "Base Scenario (100% HDV): fitted free-flow speed is 12.0 m/s and jam density is 59 veh/km.",
+      "Scenario 1 (100% AV/CAV): free-flow speed falls to 11.0 m/s (−8.3%) and jam density rises to 65 veh/km (+10.2%).",
+      "The derived critical point moves from 29.5 veh/km at 6.0 m/s to 32.5 veh/km at 5.5 m/s, showing a different relationship rather than a clear performance ranking.",
+      "Potential improvement: the signal-timing change raised the fitted free-flow speed to 12.7 m/s, but it needs further validation.",
+      "Results are preliminary: one edge, one run per scenario, different plot axes, and no field calibration."
+    ]
+  },
 
   team: {
     title: "Team & Acknowledgments",
@@ -196,17 +196,18 @@ window.SITE_CONFIG = {
       "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
 
     members: [
-      { name: "Your Name", role: "Rail Scheduling & Signaling + Digital Twin I, Immersive VR Visualization + Results & Communication" }
+      { name: "Yihang Qin", role: "SUMO Road Network Development + Traffic Demand and Signal Configuration + HDV/CAV Scenario Development + Intervention Design and Implementation + Results Analysis and Visualization + Report Writing and Referencing" }
     ],
 
     acknowledgments: [
-      "Workshop: Railway Engineering",
-      "Institution: RoadwayVR University",
-      "Instructor: Ahmad Mohammadi",
-      "Tools: SUMO, Blender, Unity, Python"
+      "Course: SMRTTECH 4SC3 – Smart Cities and Communities (Fall 2026)",
+      "Institution: McMaster University, Hamilton, Ontario",
+      "Instructors: Dr. Marjan Alavi (Course), Dr. Ahmad Mohammadi (Lab)",
+      "Mini Project A: Group 7 – Justin Tang, Yihang Qin, Haider Ladha",
+      "Tools: SUMO 1.26.0, OBS Studio, Clipchamp, GitHub Pages"
     ],
 
     repoLabel: "Project Repository",
-    repoUrl: "https://github.com/USERNAME/REPO"
+    repoUrl: "https://github.com/USERNAME/smartcity-projecta.github.io"
   }
 };
