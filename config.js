@@ -90,7 +90,6 @@ window.SITE_CONFIG = {
       "Build a SUMO network and traffic model of Eglinton–Scarlett and characterize the 100% HDV baseline.",
       "Compare the speed–density relationship on edge E96 under 100% CAV versus 100% HDV.",
       "Implement and evaluate a major-road signal-timing change on the same edge.",
-      "Present the project's methods and findings through a web showcase."
     ]
   },
 
